@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DjangoPractica"
+    }
+  },
+  "defaultProject": "DjangoPractica",
+  "cli": {
+    "analytics": "fd1eaef1-4d73-4099-85c0-950eb295f90f"
+  }
 }
