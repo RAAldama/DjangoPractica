@@ -8,8 +8,19 @@ import { UploadService } from '../../services/upload.service';
 })
 export class FormComponent implements OnInit {
 
+  toFile;
+
   constructor(private uploadService: UploadService) {}
 
   ngOnInit() {}
+
+  onChange(event){
+    this.toFile = event.target.files;
+  }
+  
+  submit(){
+    const file = this.toFile.item(0);
+    this.uploadService.fileUpload(file);
+  }
   
 }
